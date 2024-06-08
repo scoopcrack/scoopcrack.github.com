@@ -1,0 +1,146 @@
+body {
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0d0d0d;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-icon div {
+    width: 100%;
+    height: 4px;
+    background-color: #e0e0e0;
+    transition: all 0.3s;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.menu.active {
+    display: block;
+    animation: slide-down 0.3s ease-out;
+}
+
+.menu li {
+    padding: 10px 20px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ff6347;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    transition: color 0.3s;
+}
+
+h1:hover {
+    color: #ff6347;
+}
+
+.downloads-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.downloads-list li {
+    margin: 10px 0;
+}
+
+.downloads-list a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.downloads-list a:hover {
+    color: #ff6347;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: block;
+    }
+}
+
+/* Game Info Page Specific Styles */
+.game-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.game-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+.game-description {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}

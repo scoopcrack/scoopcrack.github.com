@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="game-title">Game Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Scoopcrack</div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="downloads.html">Games</a></li>
+        </ul>
+    </header>
+    <div class="container game-container">
+        <img id="game-image" src="" alt="Game Image" class="game-image">
+        <div class="game-info">
+            <h1 id="game-name">Game Name</h1>
+            <a id="steam-link" href="#" target="_blank" class="steam-link">Source</a>
+            <p id="game-description" class="game-description">Game Description</p>
+            <ul class="downloads-list">
+                <li><a id="download-link-1" href="#">Download Game (.zip)</a></li>
+                <li><a id="download-link-2" href="#">Download Game (.torrent)</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
